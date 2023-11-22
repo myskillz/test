@@ -18,7 +18,7 @@
 2. cd test
 3. composer install
 4. npm install
-
+5. npm run dev
 ---
 
 ## Solutions
