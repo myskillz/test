@@ -2,22 +2,34 @@
 
 ## Development environment
 
-**Framework Laravel(Sail + Docker) / Inertia**
+**Framework Laravel(Sail + Docker)**
+> https://laravel.com/docs/10.x/sail
+
+ **Inertia**
 > https://inertiajs.com/
 
 **tailwindcss**
 > https://tailwindcss.com/
 
+---
+
 ## Set up
-1. git clone https://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@github.com/myskillz/test.git
-2. composer install
-3. npm install
+1. git clone https://github.com/myskillz/test.git
+2. cd test
+3. composer install
+4. npm install
+
+---
 
 ## Solutions
 ### Authentication for these APIs should be done with an API token
 Using the request 'headers' to pass token. e.g. Authorization:Bearer 
 
+### Test
+Feature / Unit
+
 ### Manager Design Pattern 
+App->Manangers->ApiManager
 
 ### Enchance API response caching by 
 1. install Memcache

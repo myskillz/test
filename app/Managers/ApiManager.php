@@ -8,12 +8,6 @@ use GuzzleHttp\Client;
  */
 class ApiManager
 {
-    public function getUsersCount()
-    {
-        // Your logic to get the total number of users
-        return 100;
-    }
-
     /**
      * Return API URL
      * @return string
@@ -32,9 +26,8 @@ class ApiManager
         return env($tokenName, '');
     }
 
-
     /**
-     * get API content by link
+     * Get API content by URL
      * @param  Int
      * @return Array
      */
@@ -56,7 +49,7 @@ class ApiManager
     }
 
     /**
-     * get API content by link
+     * Execute calling API
      * @param  Int
      * @return Array
      */
@@ -74,7 +67,7 @@ class ApiManager
             $response = $client->get($apiUrl, [
                                                 'headers' => [
                                                     'Authorization' => 'Bearer ' . $apiToken,
-                                                    'Accept' => 'application/json', // Adjust based on the expected content type
+                                                    'Accept' => 'application/json', 
                                                 ],
                                             ]); 
             if($response && ($response->getStatusCode() === 200))
